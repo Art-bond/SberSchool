@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="ru.d3st.sberschool.startscreen.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_speedFragment"
+            app:destination="@id/speedFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_appleInBasketListFragment"
+            app:destination="@id/appleInBasketListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/speedFragment"
+        android:name="ru.d3st.sberschool.speedometer.SpeedFragment"
+        android:label="fragment_speed"
+        tools:layout="@layout/fragment_speed" />
+    <fragment
+        android:id="@+id/appleInBasketListFragment"
+        android:name="ru.d3st.sberschool.applelist.FragmentAppleInBasketList"
+        android:label="fragment_apple_in_basket_list"
+        tools:layout="@layout/fragment_apple_in_basket_list" />
+</navigation>

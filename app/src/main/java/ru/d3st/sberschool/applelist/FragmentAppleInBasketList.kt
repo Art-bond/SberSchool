@@ -57,7 +57,7 @@ class FragmentAppleInBasketList : Fragment() {
 
         val dividerItemDecoration = DividerItemDecoration(requireContext(), RecyclerView.VERTICAL)
 
-        val res = ContextCompat.getDrawable(requireContext(), R.drawable.divider_drawable);
+        val res = ContextCompat.getDrawable(requireContext(), R.drawable.divider_drawable)
 
         if (res != null) {
             dividerItemDecoration.setDrawable(res)
@@ -73,7 +73,7 @@ class FragmentAppleInBasketList : Fragment() {
             }
             dataList.removeAll(listApples)
             dataList.removeAll(listBasket)
-            basketIds=1
+            basketIds = 1
             binding.rvList.adapter?.notifyDataSetChanged()
         }
 

@@ -40,6 +40,7 @@ class DataAdapter(
                 adapterDataList.removeAt(adapterPosition)
 
                 notifyItemRemoved(adapterPosition)
+                notifyItemChanged(adapterDataList.lastIndex)
 
             }
 
